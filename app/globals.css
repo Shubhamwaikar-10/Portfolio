@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -9,6 +12,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
+  --font-family: var(--font-geist-sans), sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
@@ -16,7 +20,25 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --barca-blue: #004d98;
+    --barca-red: #a50044;
+    --barca-gold: #ffb81c;
+    --barca-white: #e3f2fd;
   }
+}
+
+.gradient-mesh {
+  background: linear-gradient(135deg, var(--barca-blue) 0%, var(--barca-red) 50%, var(--barca-blue) 100%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.neon-glow {
+  box-shadow: 0 0 30px rgba(255, 184, 28, 0.5);
 }
 
 body {
