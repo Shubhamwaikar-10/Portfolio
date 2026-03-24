@@ -64,7 +64,8 @@ export default function Portfolio() {
   if (!mounted) return <div />;
 
   return (
-    <main className="min-h-screen gradient-mesh pt-16 sm:pt-20 md:pt-24 lg:pt-28 overflow-x-hidden">
+<main className="min-h-screen gradient-mesh pt-16 sm:pt-20 md:pt-24 lg:pt-28 overflow-x-hidden 
+                 bg-gradient-to-br from-[#004D98]/95 via-[#A50044]/80 to-[#004D98]/95 !important">
       <Navbar />
       <ParticlesBg />
 

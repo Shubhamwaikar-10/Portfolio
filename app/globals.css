@@ -4,8 +4,12 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a !important;
+  --foreground: #ededed !important;
+  --barca-blue: #004d98 !important;
+  --barca-red: #a50044 !important;
+  --barca-gold: #ffb81c !important;
+  --barca-white: #e3f2fd !important;
 }
 
 @theme inline {
@@ -16,33 +20,35 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* OVERRIDE MOBILE LIGHT MODE - FORCE DARK EVERYWHERE */
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --barca-blue: #004d98;
-    --barca-red: #a50044;
-    --barca-gold: #ffb81c;
-    --barca-white: #e3f2fd;
+    --background: #0a0a0a !important;
+    --foreground: #ededed !important;
+    --barca-blue: #004d98 !important;
+    --barca-red: #a50044 !important;
+    --barca-gold: #ffb81c !important;
+    --barca-white: #e3f2fd !important;
   }
 }
 
 .gradient-mesh {
-  background: linear-gradient(135deg, var(--barca-blue) 0%, var(--barca-red) 50%, var(--barca-blue) 100%);
+  background: linear-gradient(135deg, var(--barca-blue) 0%, var(--barca-red) 50%, var(--barca-blue) 100%) !important;
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1) !important;
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 .neon-glow {
-  box-shadow: 0 0 30px rgba(255, 184, 28, 0.5);
+  box-shadow: 0 0 30px rgba(255, 184, 28, 0.5) !important;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+html, body {
+  background: var(--background) !important;
+  color: var(--foreground) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  color-scheme: dark !important;
 }
