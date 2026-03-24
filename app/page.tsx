@@ -64,8 +64,10 @@ export default function Portfolio() {
   if (!mounted) return <div />;
 
   return (
-<main className="min-h-screen gradient-mesh pt-16 sm:pt-20 md:pt-24 lg:pt-28 overflow-x-hidden 
-                 bg-gradient-to-br from-[#004D98]/95 via-[#A50044]/80 to-[#004D98]/95 !important">
+    <main
+      className="min-h-screen gradient-mesh pt-16 sm:pt-20 md:pt-24 lg:pt-28 overflow-x-hidden 
+                 bg-gradient-to-br from-[#004D98]/95 via-[#A50044]/80 to-[#004D98]/95 !important"
+    >
       <Navbar />
       <ParticlesBg />
 
@@ -92,7 +94,7 @@ export default function Portfolio() {
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-center lg:text-left max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl px-2 lg:px-0 w-full -mt-10 lg:-mt-12"
+          className="text-center lg:text-left max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl px-2 lg:px-0 w-full -mt-2 sm:-mt-6 md:-mt-8 lg:-mt-10"
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-black bg-gradient-to-r from-[#FFB81C] via-white to-[#FFB81C] bg-clip-text text-transparent mb-4 sm:mb-6 leading-tight">
             Shubham Waikar
