@@ -80,7 +80,7 @@ export default function Portfolio() {
         <motion.div
           initial={{ opacity: 0, scale: 0.8, x: -50 }}
           animate={{ opacity: 1, scale: 1, x: 0 }}
-          className="w-54 h-54 sm:w-66 sm:h-66 md:w-74 md:h-74 lg:w-82 lg:h-82 xl:w-98 xl:h-98 rounded-3xl overflow-hidden shadow-2xl shadow-black/50 ring-4 ring-white/20 hover:ring-[#FFB81C]/50 transition-all duration-500 mx-auto lg:mx-0 flex-shrink-0 -mt-14 sm:-mt-16 lg:-mt-18"
+          className="w-60 h-60 sm:w-72 sm:h-78 md:w-78 md:h-96 lg:w-96 lg:h-96 xl:w-[26rem] xl:h-[26rem] rounded-3xl overflow-hidden shadow-2xl shadow-black/50 ring-4 ring-white/20 hover:ring-[#FFB81C]/50 transition-all duration-500 mx-auto lg:mx-0 flex-shrink-0 -mt-0 sm:-mt-12 lg:-mt-16"
         >
           <img
             src="/pic.png"
@@ -94,7 +94,7 @@ export default function Portfolio() {
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-center lg:text-left max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl px-2 lg:px-0 w-full -mt-2 sm:-mt-6 md:-mt-8 lg:-mt-10"
+          className="text-center lg:text-left max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl px-3 lg:px-0 w-full mt-4 sm:mt-2 md:mt-0 lg:-mt-4"
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-black bg-gradient-to-r from-[#FFB81C] via-white to-[#FFB81C] bg-clip-text text-transparent mb-4 sm:mb-6 leading-tight">
             Shubham Waikar
