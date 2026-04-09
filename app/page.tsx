@@ -20,7 +20,7 @@ const projects = [
 ];
 
 const skills = [
-  { label: "Languages", items: ["JavaScript"] },
+  { label: "Languages", items: ["JavaScript","TypeScript","PHP"] },
   {
     label: "Frameworks/Libraries",
     items: ["React Native", "React.js", "Next.js", "Node.js", "Express.js"],
@@ -252,7 +252,7 @@ export default function Portfolio() {
                 </li>
                 <li>React.js/Next.js web applications</li>
                 <li>Developing MERN stack (MongoDB, Express.js, Node.js)</li>
-                <li>CI/CD pipelines, Docker deployments</li>
+                <li>CI/CD pipelines, Play Store deployments</li>
               </ul>
             </div>
           </motion.div>
